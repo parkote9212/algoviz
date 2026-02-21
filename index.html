@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AlgoViz - 알고리즘 시각화 플랫폼</title>
+    <title>AlgoViz - 알고리즘 시각화</title>
   </head>
   <body>
     <div id="app">
@@ -14,13 +14,19 @@
       </header>
 
       <main>
-        <sectionid="canvas-container">
-          <canvas id="visualizer" width="800" height="600"></canvas>
+        <!-- Canvas 영역 -->
+        <section id="canvas-container">
+          <canvas id="visualizer" width="800" height="400"></canvas>
         </section>
 
-        <section id=""controls">
-          <!--  컨트롤 패널-->
-        </section>
+        <!-- 통계 패널 -->
+        <section id="stats"></section>
+
+        <!-- 코드 뷰어 -->
+        <section id="code-viewer"></section>
+
+        <!-- 컨트롤 패널 -->
+        <section id="controls"></section>
       </main>
     </div>
 

@@ -1,8 +1,11 @@
 {
   "name": "algoviz",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Interactive Algorithm Visualization Platform",
+  "author": "G.C.Park",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,9 +15,11 @@
     "format": "prettier --write \"src/**/*.{js,css}\""
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "eslint": "^10.0.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
+    "globals": "^17.3.0",
     "prettier": "^3.8.1",
     "vite": "^7.3.1"
   }

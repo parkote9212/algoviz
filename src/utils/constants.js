@@ -1,4 +1,4 @@
-// 애니메이션 속도 설정
+/** @type {{ SLOW: number, NORMAL: number, FAST: number, VERY_FAST: number }} */
 export const ANIMATION_SPEED = {
   SLOW: 0.5,
   NORMAL: 1,
@@ -6,16 +6,34 @@ export const ANIMATION_SPEED = {
   VERY_FAST: 4,
 }
 
-// 색상 테마
-export const COLORS = {
-  DEFAULT: '#3b82f6', // 파란색
-  COMPARING: '#f59e0b', // 주황색
-  SWAPPING: '#ef4444', // 빨간색
-  SORTED: '#10b981', // 초록색
-  PIVOT: '#8b5cf6', // 보라색
+/** @type {Record<string, { DEFAULT: string, COMPARING: string, SWAPPING: string, SORTED: string, PIVOT: string }>} */
+export const ALGORITHM_COLORS = {
+  bubbleSort: {
+    DEFAULT: '#3b82f6',
+    COMPARING: '#f59e0b',
+    SWAPPING: '#ef4444',
+    SORTED: '#10b981',
+    PIVOT: '#8b5cf6',
+  },
+  quickSort: {
+    DEFAULT: '#06b6d4',
+    COMPARING: '#f59e0b',
+    SWAPPING: '#ef4444',
+    SORTED: '#10b981',
+    PIVOT: '#ec4899',
+  },
+  mergeSort: {
+    DEFAULT: '#8b5cf6',
+    COMPARING: '#f59e0b',
+    SWAPPING: '#06b6d4',
+    SORTED: '#10b981',
+    PIVOT: '#ec4899',
+  },
 }
 
-// Canvas 설정
+export const COLORS = ALGORITHM_COLORS.bubbleSort
+
+/** @type {{ WIDTH: number, HEIGHT: number, PADDING: number, BAR_GAP: number }} */
 export const CANVAS_CONFIG = {
   WIDTH: 800,
   HEIGHT: 400,
@@ -23,14 +41,14 @@ export const CANVAS_CONFIG = {
   BAR_GAP: 2,
 }
 
-// 알고리즘 타입
+/** @type {{ BUBBLE_SORT: string, QUICK_SORT: string, MERGE_SORT: string }} */
 export const ALGORITHM_TYPES = {
   BUBBLE_SORT: 'bubbleSort',
   QUICK_SORT: 'quickSort',
   MERGE_SORT: 'mergeSort',
 }
 
-// 배열 크기 옵션
+/** @type {{ SMALL: number, MEDIUM: number, LARGE: number }} */
 export const ARRAY_SIZES = {
   SMALL: 10,
   MEDIUM: 20,
